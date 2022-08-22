@@ -43,14 +43,14 @@ public class URLRepository {
     // We can increment this id to add our next id to our storage
     List<Map.Entry<Integer, String>> entryList = new ArrayList<>(mUrlRepository.entrySet());
 
-    int nextId = 10000;
+    int nextId = 1;
 
     // if there are entries in the repository lets get the final id in the repository
     // we then can add a new entry with the next number after the existing final id
     if (entryList.size() > 0) {
       Map.Entry<Integer, String> lastEntry = entryList.get(entryList.size() - 1);
       int lastId = lastEntry.getKey();
-      nextId = lastId + 10;
+      nextId = lastId + 1;
     }
 
     // add the url to the repository with the generated id

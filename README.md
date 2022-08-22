@@ -19,6 +19,7 @@ Maven is required to build the service. The typical build commands to follow are
 ```
 cd ShortUrl
 mvn clean install
-mvn package
+mvn package 
+mvn test - this will run the tests independently but they will also be run with above commandes
 cd target
 java -jar URL.jar
